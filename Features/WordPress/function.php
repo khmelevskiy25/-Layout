@@ -14,3 +14,8 @@ add_filter('the_content', 'art_before_text' );
 function art_before_text($content) {
     return 'текст выводится перед основным контентом' . $content;
 }
+add_filter('body_class', 'art_before_text' );
+function art_before_text($class) {
+    $class[] = 'footer_class';
+    return $class;
+}
