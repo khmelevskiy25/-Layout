@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+img {
+    width: 100%;
+}
+.scene {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+}
+.layer {
+    position: absolute;
+    left: -10%;
+    top: 0;
+    width: 110%;
+    height: 100%;
+}
+.layer-bg {
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+.layer_1 {
+    background-image: url('img/layer_1.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+.layer_2 {
+    background-image: url('img/layer_2.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
