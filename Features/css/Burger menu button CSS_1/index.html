@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Burger menu button CSS_1</title>
+</head>
+<body>
+    <div class="section">
+        <div class="menu-block">
+            <nav class="menu-nav">
+                <a class="menu-nav__link" href="#">Home</a>
+                <a class="menu-nav__link" href="#">Portfolio</a>
+                <a class="menu-nav__link" href="#">About</a>
+                <a class="menu-nav__link" href="#">Contacts</a>
+            </nav>
+            <a href="#" class="menu-btn">
+                <span></span>
+           </a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+    $('.menu-btn').on('click', function(e){
+        e.preventDefault;
+        $(this).toggleClass('menu-btn_active');
+        $('.menu-nav').toggleClass('menu-nav_active');
+    });
+    </script>
+</body>
+</html>

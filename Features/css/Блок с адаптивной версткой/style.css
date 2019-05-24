@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.section {
+    background-color: #f2395a;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 1000px;
+}
+.heading {
+    margin-left: 20%;
+}
+.phone,
+.tablet,
+.desktop {
+   position: absolute;
+   bottom: 0;
+   left: 15%;
+   background-color: #fff;
+   box-shadow: 13px 13px 32px 0 rgba(242, 57, 90, .3);
+   transition: 1s;
+   transform: translateY(100%);
+}
+.section:hover .phone,
+.section:hover .tablet,
+.section:hover .desktop {
+    transform: translateY(15px) rotateY(-15deg);
+}
+.phone {
+    left: 5%;
+    width: 200px;
+    height: 280px;
+    z-index: 3;
+    background: #fff
+    url('1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    transition-delay: .2s;
+}
+.tablet {
+    width: 360px;
+    height: 380px;
+    left: 10%;
+    z-index: 1;
+    background: #fff
+    url('2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    transition-delay: .4s;
+}
+.desktop {
+    left: 15%;
+    width: 680px;
+    height: 480px;
+    background: #fff
+    url('3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    transition-delay: .6s;
+}
