@@ -36,7 +36,7 @@ figure:before {
   left: 5%;
   border-top: solid 2px;
   border-bottom: solid 2px;
-  transition: 0.2s;
+  transition: 0.5s;
   transform: scaleX(0);
 }
 
@@ -50,7 +50,7 @@ figure:after {
   left: 5%;
   border-left: solid 2px;
   border-right: solid 2px;
-  transition: 0.2s;
+  transition: 0.5s;
   transform: scaleY(0);
 }
 
