@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 1s;
+    transition: .6s;
     backface-visibility: hidden;
     border-radius: 10px;
 }
@@ -36,7 +36,7 @@ body {
 }
 .back {
     background-color: #BDBDBD;
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
 }
 .card:hover .front {transform: rotateY(180deg);}
 .card:hover .back {transform: rotateY(360deg);}
